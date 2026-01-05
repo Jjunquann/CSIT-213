@@ -36,13 +36,14 @@ public class RectangleTest{
   public static void main(String[] argv){
     Rectangle r1 = new Rectangle(10, 5); // new operator
     // calling instance methods
-    System.out.printIn(r1.getArea());
-    System.out.printIn(r1.getPerimeter());
+    System.out.println(r1.getArea());
+    System.out.println(r1.getPerimeter());
 
     Rectangle r2 = new Rectangle(2, 5);
-    System.out.printIn(r2.getArea());
-    System.out.printIn(r2.getPerimeter());
-    
-    System.out.printIn("test");
+    System.out.println(r2.getArea());
+    System.out.println(r2.getPerimeter());
+    System.out.println("test");
+    // printing an instance
+
   }
 }
