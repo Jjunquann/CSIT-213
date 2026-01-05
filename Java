@@ -1,0 +1,12 @@
+java primitive types:
+int, double, float, char, boolean
+
+Memory allocation
+int n1; // memory allocated but not initialised
+int n2 = 10; // allocated and initialised
+int n3 = n2; // allocated, assigned the value of n2 and initialised. Value does not change even if n2 is modified.
+
+class, instance
+String, Scanner, File, Exceptions
+Rectangle r; // class reference instance
+Rectangle r1 = new Rectangle(10, 20); // r1 memory contains address of instance containing (length 10, width 20)
