@@ -27,6 +27,11 @@ public class Rectangle {
   public double getPerimeter(){
     return (length + width) * 2;
   }
+  public String toString(){
+    return String.format("Length is %.2f, Width is %.2f, Area is %.2f",length, width, getArea());
+    // String.format is a method
+    // It formats a String by combining value
+  }
 }
 
 - RectangleTest.java
@@ -42,7 +47,6 @@ public class RectangleTest{
     Rectangle r2 = new Rectangle(2, 5);
     System.out.println(r2.getArea());
     System.out.println(r2.getPerimeter());
-    System.out.println("test");
     // printing an instance
 
   }
