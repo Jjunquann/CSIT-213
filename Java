@@ -12,3 +12,18 @@ Rectangle r; // class reference instance
 Rectangle r1 = new Rectangle(10, 20); // r1 memory contains address of instance containing (length 10, width 20)
 Rectangle r2 = new Rectangle(5, 10);
 Rectangle r3 = r2; // r3 contains address of instance containing (length 5, width 10)
+
+Array of primitive types:
+int n;
+int[] nums1; // array is not created. Memory is allocated for nums1
+  nums1[0] = 10; //error, NullPointerException since nums1 is not referencing an instance
+int[] nums2 = new int[3]; //nums2 reference instance with size of 3
+  nums2[0] = -1; // nums2[2] is initialised with default value 0
+  nums2[1] = 10;
+int[] nums3 = nums2; //nums3 contains address of instance which nums2 is referencing
+  nums3[0] = 100;// value modified from -1 to 100
+
+Rectangle[] r1;
+Rectangle[] r2 = new Rectangle[2]; //null reference. An array of instance created
+  r2[0] = new Rectangle(20,10); // r2[0] reference an instance that was created containing length 20 and width 10
+  r2[1] = r2[0]; // r2[1] reference
