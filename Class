@@ -1,0 +1,16 @@
+public class Rectangle {
+  // INSTANCE variable are defined within a class 
+  // but outside of any instances
+  // instance variables are "global"
+  private double length;
+  private double width;
+
+  public double getArea(){
+    // area is a LOCAL variable
+    double area = this.width * length; // this. is optional
+    return area;
+  }
+  public double getPerimeter(){
+    return (length + width) * 2;
+  }
+}
