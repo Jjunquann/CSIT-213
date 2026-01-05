@@ -1,10 +1,24 @@
+Example of a Class
+
+- Rectangle.java
 public class Rectangle {
   // INSTANCE variable are defined within a class 
   // but outside of any instances
   // instance variables are "global"
+
   private double length;
   private double width;
+  // numeric instance variable are initialised to 0 by default
 
+  // constructor is a method to initialise the instance variable
+  // Method name must be the same as Class name
+  public Rectangle(double length, double rectWidth){
+    this.length = length; //this. is used to Disambiguate Instance Variables and Parameters 
+    width = rectWidth;
+  } 
+  
+
+  // INSTANCE method: getArea() can access instance variable directly
   public double getArea(){
     // area is a LOCAL variable
     double area = this.width * length; // this. is optional
@@ -12,5 +26,23 @@ public class Rectangle {
   }
   public double getPerimeter(){
     return (length + width) * 2;
+  }
+}
+
+- RectangleTest.java
+public class RectangleTest{
+  // String is the class name. [] array. 
+  // argv can be any name
+  public static void main(String[] argv){
+    Rectangle r1 = new Rectangle(10, 5); // new operator
+    // calling instance methods
+    System.out.printIn(r1.getArea());
+    System.out.printIn(r1.getPerimeter());
+
+    Rectangle r2 = new Rectangle(2, 5);
+    System.out.printIn(r2.getArea());
+    System.out.printIn(r2.getPerimeter());
+    
+    System.out.printIn("test");
   }
 }
