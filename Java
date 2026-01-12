@@ -27,3 +27,23 @@ Rectangle[] r1;
 Rectangle[] r2 = new Rectangle[2]; //null reference. An array of instance created
   r2[0] = new Rectangle(20,10); // r2[0] reference an instance that was created containing length 20 and width 10
   r2[1] = r2[0]; // r2[1] reference
+
+doSmt(Rectangle rect){
+  int idx =0; //local variable
+  rect.SetLength(..); //instance variable is modified
+}
+
+int num =10;
+doSmt(num){
+  Sytem.out.println(num); //ans is 10 cuz int is a primitive type
+}
+... doSmt(int n){
+  n = n+100; 
+}
+
+String class is immutable
+String s1 = "abc"; //reference to instance "abc"
+String s2 = "abc"; // same as s1
+String s3 = s2; // same as s1
+String s4 = new String("abc"); //instance is different from s5
+String s5 = new String("abc");
