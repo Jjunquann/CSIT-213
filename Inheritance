@@ -12,3 +12,7 @@ public Cylinder(double r,double h){
   super(r); //calling base class constructor
   height = h; //initialise sub class variable
 }
+
+Base class reference, subclass instance
+Circle smt = cy; //smt reference instance of cylinder
+Cylinder other = c; //error. circle instance do not contain height
