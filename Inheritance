@@ -1,0 +1,14 @@
+Examples
+public class cylinder extends circle{} //subclass cylinder base class circle
+cylinder = new cylinder(1,10) //instance includes instance variable of circle
+
+[Negative example]
+public Cylinder(double r,double h){ //constructor
+  radius = r; //error. radius is a private instance of circle
+  height = h; 
+}
+INSTEAD YOU SHOULD
+public Cylinder(double r,double h){
+  super(r); //calling base class constructor
+  height = h; //initialise sub class variable
+}
