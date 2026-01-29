@@ -16,3 +16,6 @@ public Cylinder(double r,double h){
 Base class reference, subclass instance
 Circle smt = cy; //smt reference instance of cylinder
 Cylinder other = c; //error. circle instance do not contain height
+
+Abstract class - act as blueprint, cannot be instantiated
+Used when all sub classes have something in common
