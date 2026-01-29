@@ -1,3 +1,8 @@
+public - all can access
+private - strictly within a class
+protected - accessible by itself and subclasses
+(default)(package) - same package can access
+
 java primitive types:
 int, double, float, char, boolean
 
